@@ -62,7 +62,7 @@
   .links {
     display: flex;
     flex-direction: row;
-    height: 50px;
+    height: 53px;
     width: 100%;
     border: 3px solid var(--theme-border);
   }
