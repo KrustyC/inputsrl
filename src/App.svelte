@@ -2,6 +2,7 @@
   import BottomNavigation from './components/BottomNavigation.svelte';
   import { Page } from './utils/links';
   import ThemeContext from './ThemeContext.svelte';
+  import Slider from './components/Slider.svelte';
   import Home from './pages/Home.svelte';
   import Obbiettivi from './pages/Obbiettivi.svelte';
   import Servizi from './pages/Servizi.svelte';
@@ -15,6 +16,15 @@
 
 <ThemeContext>
   <main>
+    <div id="top">
+      <div id="content">
+        <p id="title">
+          <b>inputidea</b> . it
+        </p>
+        <Slider />
+      </div>
+    </div>
+
     {#if activePage === null}
       <Home />
     {/if}
@@ -55,15 +65,40 @@
 
   main {
     text-align: left;
+    padding-top: 50px;
     width: 80vw;
     max-width: 80vw;
     margin: 0 auto;
     color: var(--theme-text);
   }
 
+  #top {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    background: var(--theme-background);
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+
+    #content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80vw;
+      margin: 0 auto;
+    }
+  }
+
   @media (min-width: 720px) {
     main {
       max-width: 80vw;
+      padding-top: 0;
+    }
+    #top {
+      display: none;
     }
   }
 </style>

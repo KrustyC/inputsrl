@@ -29,6 +29,10 @@
     }
   }
 
+  #details {
+    padding-top: 40px;
+  }
+
   p {
     margin: 0;
     font-size: 37px;
