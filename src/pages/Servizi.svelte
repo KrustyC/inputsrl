@@ -3,19 +3,20 @@
 </script>
 
 <div id="servizi">
-  <h1>Grazie al nostro team di professionisti, possiamo aiutare i nostri clienti con:</h1>
+  <h1>
+    Grazie al nostro team di professionisti, possiamo aiutare i nostri clienti
+    con:
+  </h1>
 
   <div class="grid">
     {#each servizi as servizio}
-    <div class="flex">
-      <div class="plus">
-        +
+      <div class="flex">
+        <div class="plus">+</div>
+        <div class="content">
+          <h3>{servizio.title}</h3>
+          <p>{servizio.copy}</p>
+        </div>
       </div>
-      <div class="content">
-        <h3>{servizio.title}</h3>
-        <p>{servizio.copy}</p>
-      </div>
-    </div>
     {/each}
   </div>
 </div>
@@ -31,10 +32,15 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 50px;
-    padding-bottom: 150px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    padding-bottom: 180px;
+
+    @media only screen and (min-width: 720px) {
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 40px;
+      grid-column-gap: 30px;
+    }
   }
 
   .flex {
@@ -43,8 +49,14 @@
   }
 
   .plus {
-    font-size: 40px;
+    font-size: 30px;
+    line-height: 35.4px;
     margin-right: 10px;
+
+    @media only screen and (min-width: 720px) {
+      font-size: 40px;
+      line-height: 40.2px;
+    }
   }
 
   .content {
@@ -52,9 +64,15 @@
     display: flex;
     flex-direction: column;
     h3 {
-      font-size: 40px;
+      font-size: 30px;
+      line-height: 35.4px;
       font-weight: normal;
       margin: 0;
+
+      @media only screen and (min-width: 720px) {
+        font-size: 40px;
+        line-height: 40.2px;
+      }
     }
 
     p {

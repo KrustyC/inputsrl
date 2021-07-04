@@ -4,8 +4,15 @@
   
 <style>
   p {
-    font-size: 60px;
+    font-size: 35px;
     text-align: left;
-    width: 50%;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 720px) {
+    p {
+      font-size: 60px;
+      width: 50%;
+    }
   }
 </style>

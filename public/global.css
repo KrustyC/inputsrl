@@ -71,11 +71,19 @@ button:focus {
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 40px;
+  line-height: 47.2px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.04;
+
   letter-spacing: normal;
   text-align: left;
+}
+
+@media only screen and (min-width: 720px) {
+  h1 {
+    font-size: 65px;
+    line-height: 76.7px;
+  }
 }

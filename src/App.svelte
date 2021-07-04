@@ -61,7 +61,7 @@
     color: var(--theme-text);
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 720px) {
     main {
       max-width: 80vw;
     }
