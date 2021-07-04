@@ -2,10 +2,10 @@
   <h1>Reggio Emilia</h1>
 
   <div id="details">
-    <p>Via Gramsci, 1</p>
-    <p>Reggio Emilia</p>
-    <p class="yellow">+39 327 423 7102</p>
-    <a href="mailto:info@inputidea.it">info@inputidea.it</a>
+    <p class="info">Via Gramsci, 1</p>
+    <p class="info">Reggio Emilia</p>
+    <p class="info link">+39 327 423 7102</p>
+    <a class="info" href="mailto:info@inputidea.it">info@inputidea.it</a>
 
     <p id="copy">
       Questo sito è stato progettatto ispirandosi ad alcuni consigli di
@@ -33,14 +33,19 @@
     padding-top: 40px;
   }
 
-  p,
-  a {
+  .info {
     margin: 0;
     font-size: 37px;
     line-height: 43.7px;
+    margin-bottom: 5px;
+
     @media only screen and (min-width: 720px) {
       margin-bottom: 10px;
       font-size: 40px;
+    }
+
+    &.link {
+      color: var(--theme-link);
     }
   }
 
