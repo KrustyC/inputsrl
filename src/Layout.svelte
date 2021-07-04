@@ -5,7 +5,7 @@
 
   const { theme, toggle } = getContext('theme');
 
-  export let activePage: Page;
+  export let activePage: Page | null;
 </script>
 
 <div id="layout" class={$theme.name}>

@@ -13,7 +13,7 @@
   import LowImpact from './pages/LowImpact.svelte';
   import Contatti from './pages/Contatti.svelte';
 
-  let activePage: Page;
+  let activePage = null;
 </script>
 
 <ThemeContext>
