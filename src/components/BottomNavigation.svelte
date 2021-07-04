@@ -26,6 +26,7 @@
       {/each}
       <div
         class="bottom-navigation-item switch-container"
+        on:mouseenter={() => enter(Page.LOW_IMPACT)}
         class:active={$theme.name === 'light'}
       >
         <Slider />

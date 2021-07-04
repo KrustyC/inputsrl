@@ -5,6 +5,7 @@ export enum Page {
   ESEMPI = "esempi",
   BLOG = "blog",
   CONTATTI = "contatti",
+  LOW_IMPACT = "low_impact",
 }
 
 export interface Link {

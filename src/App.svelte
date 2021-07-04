@@ -9,6 +9,7 @@
   import Talenti from './pages/Talenti.svelte';
   import Esempi from './pages/Esempi.svelte';
   import Blog from './pages/Blog.svelte';
+  import LowImpact from './pages/LowImpact.svelte';
   import Contatti from './pages/Contatti.svelte';
 
   let activePage: Page;
@@ -23,6 +24,12 @@
         </p>
         <Slider />
       </div>
+    </div>
+
+    <div id="side">
+      <p id="side-title">
+        <b>inputidea</b> . it
+      </p>
     </div>
 
     {#if activePage === null}
@@ -51,6 +58,10 @@
 
     {#if activePage === Page.CONTATTI}
       <Contatti />
+    {/if}
+
+    {#if activePage === Page.LOW_IMPACT}
+      <LowImpact />
     {/if}
 
     <BottomNavigation bind:active={activePage} />
@@ -92,13 +103,31 @@
     }
   }
 
+  #side {
+    display: none;
+  }
+
   @media (min-width: 720px) {
     main {
       max-width: 80vw;
       padding-top: 0;
     }
+
     #top {
       display: none;
+    }
+
+    #side {
+      position: fixed;
+      font-size: 25px;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      right: 50px;
+      top: 100px;
+
+      #side-title {
+        transform: rotate(-90deg);
+      }
     }
   }
 </style>
