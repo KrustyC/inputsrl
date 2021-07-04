@@ -58,8 +58,8 @@
     position: absolute;
     content: '';
 
-    height: 13.5px;
-    width: 13.5px;
+    height: 13px;
+    width: 13px;
     left: -2px;
     right: 0px;
     bottom: -1px;
