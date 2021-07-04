@@ -42,10 +42,6 @@
       margin-bottom: 10px;
       font-size: 40px;
     }
-
-    &.yellow {
-      color: var(--theme-link);
-    }
   }
 
   #copy {

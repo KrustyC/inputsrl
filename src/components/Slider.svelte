@@ -4,13 +4,21 @@
   const { theme, toggle } = getContext('theme');
 </script>
 
-<label class="switch" class={$theme.name}>
+<label class={`switch switch-${$theme.name}`}>
   <input type="checkbox" checked={$theme.name === 'light'} on:change={toggle} />
   <span class="slider" />
 </label>
 
 <style lang="scss">
   .switch {
+    &.switch-dark {
+      cursor: url('/images/red-circle.svg'), auto !important;
+    }
+
+    &.switch-light {
+      cursor: url('/images/red-circle.svg'), auto !important;
+    }
+
     position: relative;
     display: inline-block;
     width: 40px;
@@ -29,14 +37,6 @@
   }
 
   .slider {
-    &.dark {
-      cursor: url('/images/red-circle.svg'), auto !important;
-    }
-
-    &.light {
-      cursor: url('/images/red-circle.svg'), auto !important;
-    }
-
     position: absolute;
     top: 0;
     left: 0;

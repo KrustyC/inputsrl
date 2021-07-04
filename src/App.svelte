@@ -1,6 +1,8 @@
 <script lang="ts">
   import { Page } from './utils/links';
   import ThemeContext from './ThemeContext.svelte';
+  import BottomNavigation from './components/BottomNavigation.svelte';
+  import Slider from './components/Slider.svelte';
   import Layout from './Layout.svelte';
   import Home from './pages/Home.svelte';
   import Obbiettivi from './pages/Obbiettivi.svelte';
@@ -59,9 +61,8 @@
   :global(a) {
     color: var(--theme-link);
     text-decoration: none;
-
-    &:visited {
-      color: var(--theme-link) !important;
-    }
+  }
+  :global(a:visited) {
+    color: var(--theme-link);
   }
 </style>
