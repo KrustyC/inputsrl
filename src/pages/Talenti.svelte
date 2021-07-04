@@ -13,7 +13,10 @@
         <div class="content">
           <h3>{talento.nome}</h3>
           <div class="details">
-            <p>{talento.ruolo} - <span class="email">{talento.email}</span></p>
+            <p>
+              {talento.ruolo} -
+              <a href={`mailto:${talento.email}`}>{talento.email}</a>
+            </p>
             {#each talento.specializzazioni as specializzazione}
               <p>[{specializzazione}]</p>
             {/each}
@@ -79,9 +82,6 @@
       line-height: 23.6px;
       p {
         margin: 8px 0;
-      }
-      .email {
-        color: var(--theme-link);
       }
     }
 

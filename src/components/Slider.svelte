@@ -4,7 +4,7 @@
   const { theme, toggle } = getContext('theme');
 </script>
 
-<label class="switch">
+<label class="switch" class={$theme.name}>
   <input type="checkbox" checked={$theme.name === 'light'} on:change={toggle} />
   <span class="slider" />
 </label>
@@ -29,8 +29,15 @@
   }
 
   .slider {
+    &.dark {
+      cursor: url('/images/red-circle.svg'), auto !important;
+    }
+
+    &.light {
+      cursor: url('/images/red-circle.svg'), auto !important;
+    }
+
     position: absolute;
-    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;

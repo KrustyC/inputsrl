@@ -10,7 +10,7 @@
 
   <div class="grid">
     {#each servizi as servizio}
-      <div class="flex">
+      <div class="servizio">
         <div class="plus">+</div>
         <div class="content">
           <h3>{servizio.title}</h3>
@@ -43,7 +43,7 @@
     }
   }
 
-  .flex {
+  .servizio {
     display: flex;
     flex-direction: row;
   }

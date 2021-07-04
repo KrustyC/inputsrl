@@ -3,13 +3,13 @@
   <div id="lowimpact-container">
     <p>
       Questo sito è stato progettatto ispirandosi ad alcuni consigli di
-      <span class="yellow">Low Tech Magazine</span>
+      <a href="https://google.com">Low Tech Magazine</a>
       per la realizzazione di piattaforme digitali a basso impatto energetico e ambientale.
     </p>
     <p>
       Allo stesso tempo, con l’intento di supportare la comunità creativa
       italiana, la typeface utilizzata sulla nostra piattaforma è progettata da
-      <span class="yellow">AlfaType</span>, con base a Torino.
+      <a href="https://google.com">AlfaType</a>, con base a Torino.
     </p>
   </div>
 </div>
@@ -28,10 +28,6 @@
 
     &:first-of-type {
       margin-right: 150px;
-    }
-
-    span {
-      color: var(--theme-link);
     }
   }
 </style>

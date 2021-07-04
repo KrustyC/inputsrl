@@ -91,11 +91,6 @@
       font-size: 13px;
       justify-content: space-between;
       color: var(--theme-text);
-
-      a {
-        color: var(--theme-link);
-        text-decoration: none;
-      }
     }
   }
 
@@ -104,7 +99,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     font-size: 18px;
     color: var(--theme-text);
     border-bottom: 3px solid var(--theme-border);

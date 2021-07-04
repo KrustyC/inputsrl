@@ -7,7 +7,11 @@
     <div class="post">
       <img src={post.immagine} alt={post.titolo} />
       <div class="content">
-        <h3 class={post.pubblicato ? 'published' : ''}>{post.titolo}</h3>
+        {#if post.pubblicato}
+          <a href={post.link}>{post.titolo}</a>
+        {:else}
+          <h3>{post.titolo}</h3>
+        {/if}
         <p>{post.data}</p>
       </div>
     </div>
@@ -45,22 +49,22 @@
     }
 
     .content {
-      h3 {
+      h3,
+      a {
         font-size: 30px;
         line-height: 35.4px;
         font-weight: normal;
         margin: 0;
-        color: var(--theme-text);
-
-        &.published {
-          color: var(--theme-link);
-        }
 
         @media only screen and (min-width: 720px) {
           font-size: 40px;
           line-height: 47.6px;
           font-weight: normal;
         }
+      }
+
+      h3 {
+        color: var(--theme-text);
       }
 
       p {
