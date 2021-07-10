@@ -20,7 +20,7 @@
   @media only screen and (min-width: 720px) {
     p {
       font-size: 60px;
-      width: 50%;
+      width: 60%;
     }
   }
 </style>

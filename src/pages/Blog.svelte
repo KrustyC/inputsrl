@@ -14,7 +14,7 @@
       />
       <div class="content">
         {#if post.pubblicato}
-          <a href={post.link}>{post.titolo}</a>
+          <a href={post.link} target="_blank">{post.titolo}</a>
         {:else}
           <h3>{post.titolo}</h3>
         {/if}

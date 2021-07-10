@@ -15,14 +15,16 @@
   <div id="main">
     <div class="links">
       {#each links as link}
-        <div
-          class="bottom-navigation-item link"
-          class:active={active === link.id}
-          on:mouseenter={() => enter(link.id)}
-          on:click={() => enter(link.id)}
-        >
-          {link.label} .
-        </div>
+        {#if link.id !== Page.HOME}
+          <div
+            class="bottom-navigation-item link"
+            class:active={active === link.id}
+            on:mouseenter={() => enter(link.id)}
+            on:click={() => enter(link.id)}
+          >
+            {link.label} .
+          </div>
+        {/if}
       {/each}
       <div
         class="bottom-navigation-item switch-container"
@@ -35,8 +37,11 @@
     <div id="credits">
       <p>© 2021 - Input</p>
       <p>
-        Website by <a href="https://matteobandi.com">Matteo Bandi</a> &
-        <a href="https://dcrestini.me">Davide Crestini</a>
+        Website by <a href="https://matteobandidesign.com" target="_blank"
+          >Matteo Bandi</a
+        >
+        &
+        <a href="https://dcrestini.me" target="_blank">Davide Crestini</a>
       </p>
     </div>
   </div>
@@ -109,6 +114,13 @@
 
     @media only screen and (min-width: 720px) {
       border-bottom: 0px;
+    }
+
+    @media only screen and (min-width: 964px) {
+      font-size: 22px;
+    }
+
+    @media only screen and (min-width: 1430px) {
       font-size: 30px;
     }
 

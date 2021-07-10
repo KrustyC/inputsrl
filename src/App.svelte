@@ -13,12 +13,12 @@
   import LowImpact from './pages/LowImpact.svelte';
   import Contatti from './pages/Contatti.svelte';
 
-  let activePage = null;
+  let activePage = Page.HOME;
 </script>
 
 <ThemeContext>
   <Layout bind:activePage>
-    {#if activePage === null}
+    {#if activePage === Page.HOME}
       <Home />
     {/if}
 
@@ -65,4 +65,7 @@
   :global(a:visited) {
     color: var(--theme-link);
   }
+  /* :global(a:hover) {
+    text-decoration: underline;
+  } */
 </style>

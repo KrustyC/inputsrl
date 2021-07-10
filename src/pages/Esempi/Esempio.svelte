@@ -2,21 +2,23 @@
   import type { Esempio } from '../utils/esempi';
 
   export let esempio: Esempio;
+  export let isOpen: boolean;
+  export let onToggle: (id: number) => void;
 
-  let open = false;
+  // let open = false;
 
-  function onToggle() {
-    open = !open;
-  }
+  // function onToggle() {
+  //   open = !open;
+  // }
 </script>
 
 <div class="esempio">
-  <div on:click={onToggle}>
-    <div class="plus" class:open>+</div>
+  <div on:click={() => onToggle(esempio.id)}>
+    <div class="plus" class:open={isOpen}>+</div>
   </div>
   <div class="content">
-    <h3 on:click={onToggle}>{esempio.titolo}</h3>
-    <p class:open>{esempio.testo}</p>
+    <h3 on:click={() => onToggle(esempio.id)}>{esempio.titolo}</h3>
+    <p class:open={isOpen}>{esempio.testo}</p>
   </div>
 </div>
 

@@ -1,6 +1,12 @@
 <script lang="ts">
   import { esempi } from '../../utils/esempi';
   import Esempio from './Esempio.svelte';
+
+  let openEsempio: number | null = null;
+
+  function onToggle(id: number) {
+    openEsempio = openEsempio === id ? null : id;
+  }
 </script>
 
 <div>
@@ -14,7 +20,7 @@
     </p>
     <div id="progetti">
       {#each esempi as esempio}
-        <Esempio {esempio} />
+        <Esempio {esempio} isOpen={openEsempio === esempio.id} {onToggle} />
       {/each}
     </div>
   </div>

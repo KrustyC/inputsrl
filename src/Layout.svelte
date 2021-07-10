@@ -1,18 +1,24 @@
 <script lang="ts">
   import { getContext } from 'svelte';
+  import { Page } from './utils/links';
   import BottomNavigation from './components/BottomNavigation.svelte';
   import Slider from './components/Slider.svelte';
 
   const { theme, toggle } = getContext('theme');
 
   export let activePage: Page | null;
+
+  function onGoHome() {
+    console.log('CIAO');
+    activePage = Page.HOME;
+  }
 </script>
 
 <div id="layout" class={$theme.name}>
   <div id="top">
     <div id="content">
       <p id="title">
-        <b>inputidea</b> . it
+        <b on:click={() => onGoHome()}>inputidea</b> . it
       </p>
       <Slider />
     </div>
@@ -20,7 +26,7 @@
 
   <div id="side">
     <p id="side-title">
-      <b>inputidea</b> . it
+      <b on:click={() => onGoHome()}>inputidea</b> . it
     </p>
   </div>
 
@@ -37,10 +43,20 @@
 
     &.dark {
       cursor: url('/images/yellow-dot.svg'), auto !important;
+
+      :global(a:hover) {
+        cursor: url('/images/yellow-dot.svg'), auto !important;
+        text-decoration: underline;
+      }
     }
 
     &.light {
       cursor: url('/images/red-dot.svg'), auto !important;
+
+      :global(a:hover) {
+        cursor: url('/images/red-dot.svg'), auto !important;
+        text-decoration: underline;
+      }
     }
   }
 

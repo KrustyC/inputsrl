@@ -4,6 +4,7 @@ interface EsempioLink {
 }
 
 export interface Esempio {
+  id: number;
   titolo: string;
   testo: string;
   links: EsempioLink[];
@@ -11,6 +12,7 @@ export interface Esempio {
 
 export const esempi: Esempio[] = [
   {
+    id: 1,
     titolo: 'iZoom',
     testo:
       "E’ fondamentale che i contenuti creati compaiono nelle prime posizioni dei motori di ricerca. Creiamo quindi testi in un'ottica SEO, utilizzando in maniera performante e incisiva il linguaggio del web. Ti seguiamo step by step dall’ideazione alla stesura dei contenuti, individuando insieme un testo ottimale per il target di utenti che si vuole raggiungere e per i motori di ricerca.",
@@ -21,6 +23,7 @@ export const esempi: Esempio[] = [
     ],
   },
   {
+    id: 2,
     titolo: 'Conad',
     testo:
       "E’ fondamentale che i contenuti creati compaiono nelle prime posizioni dei motori di ricerca. Creiamo quindi testi in un'ottica SEO, utilizzando in maniera performante e incisiva il linguaggio del web. Ti seguiamo step by step dall’ideazione alla stesura dei contenuti, individuando insieme un testo ottimale per il target di utenti che si vuole raggiungere e per i motori di ricerca.",
@@ -31,6 +34,7 @@ export const esempi: Esempio[] = [
     ],
   },
   {
+    id: 3,
     titolo: 'Birrificio Dada',
     testo:
       "E’ fondamentale che i contenuti creati compaiono nelle prime posizioni dei motori di ricerca. Creiamo quindi testi in un'ottica SEO, utilizzando in maniera performante e incisiva il linguaggio del web. Ti seguiamo step by step dall’ideazione alla stesura dei contenuti, individuando insieme un testo ottimale per il target di utenti che si vuole raggiungere e per i motori di ricerca.",
@@ -41,6 +45,7 @@ export const esempi: Esempio[] = [
     ],
   },
   {
+    id: 4,
     titolo: 'Puro Bianco',
     testo:
       "E’ fondamentale che i contenuti creati compaiono nelle prime posizioni dei motori di ricerca. Creiamo quindi testi in un'ottica SEO, utilizzando in maniera performante e incisiva il linguaggio del web. Ti seguiamo step by step dall’ideazione alla stesura dei contenuti, individuando insieme un testo ottimale per il target di utenti che si vuole raggiungere e per i motori di ricerca.",
@@ -51,6 +56,7 @@ export const esempi: Esempio[] = [
     ],
   },
   {
+    id: 5,
     titolo: 'R.A.M.',
     testo:
       "E’ fondamentale che i contenuti creati compaiono nelle prime posizioni dei motori di ricerca. Creiamo quindi testi in un'ottica SEO, utilizzando in maniera performante e incisiva il linguaggio del web. Ti seguiamo step by step dall’ideazione alla stesura dei contenuti, individuando insieme un testo ottimale per il target di utenti che si vuole raggiungere e per i motori di ricerca.",
@@ -61,6 +67,7 @@ export const esempi: Esempio[] = [
     ],
   },
   {
+    id: 6,
     titolo: 'Reggio Revisioni',
     testo:
       "E’ fondamentale che i contenuti creati compaiono nelle prime posizioni dei motori di ricerca. Creiamo quindi testi in un'ottica SEO, utilizzando in maniera performante e incisiva il linguaggio del web. Ti seguiamo step by step dall’ideazione alla stesura dei contenuti, individuando insieme un testo ottimale per il target di utenti che si vuole raggiungere e per i motori di ricerca.",
@@ -71,6 +78,7 @@ export const esempi: Esempio[] = [
     ],
   },
   {
+    id: 7,
     titolo: 'Caffè Veronesi',
     testo:
       "E’ fondamentale che i contenuti creati compaiono nelle prime posizioni dei motori di ricerca. Creiamo quindi testi in un'ottica SEO, utilizzando in maniera performante e incisiva il linguaggio del web. Ti seguiamo step by step dall’ideazione alla stesura dei contenuti, individuando insieme un testo ottimale per il target di utenti che si vuole raggiungere e per i motori di ricerca.",

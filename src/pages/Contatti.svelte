@@ -5,17 +5,17 @@
     <p class="info">Via Gramsci, 1</p>
     <p class="info">Reggio Emilia</p>
     <p class="info link">+39 327 423 7102</p>
-    <a class="info" href="mailto:info@inputidea.it">info@inputidea.it</a>
+    <a class="info" href="mailto:info@inputidea.it" target="_blank">info@inputidea.it</a>
 
     <p id="copy">
       Questo sito è stato progettatto ispirandosi ad alcuni consigli di
-      <a href="https://google.com">Low Tech Magazine</a>
+      <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website.html" target="_blank">Low Tech Magazine</a>
       per la realizzazione di piattaforme digitali a basso impatto energetico e ambientale.
       <br />
       <br />
       Allo stesso tempo, con l’intento di supportare la comunità creativa italiana,
       la typeface utilizzata sulla nostra piattaforma è progettata da
-      <a href="https://google.com">AlfaType</a>, con base a Torino.
+      <a href="http://www.alfatypefonts.com/" target="_blank">AlfaType</a>, con base a Torino.
     </p>
   </div>
 </div>

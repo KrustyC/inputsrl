@@ -1,5 +1,6 @@
 export enum Page {
-  OBBIETTIVI = "obbiettivi",
+  HOME = "home",
+  OBBIETTIVI = "obiettivi",
   SERVIZI = "servizi",
   TALENTI = "talenti",
   ESEMPI = "esempi",
@@ -13,7 +14,8 @@ export interface Link {
   label: string;
 }
 export const links: Link[] = [
-  { id: Page.OBBIETTIVI, label: "Obbiettivi" },
+  { id: Page.HOME, label: "Home" },
+  { id: Page.OBBIETTIVI, label: "Obiettivi" },
   { id: Page.SERVIZI, label: "Servizi" },
   { id: Page.TALENTI, label: "Talenti" },
   { id: Page.ESEMPI, label: "Esempi" },
