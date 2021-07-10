@@ -38,6 +38,10 @@
 
   #details {
     padding-top: 40px;
+
+    @media only screen and (min-width: 720px) {
+      padding-top: 0;
+    }
   }
 
   .info {

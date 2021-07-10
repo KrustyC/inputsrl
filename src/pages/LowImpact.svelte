@@ -25,6 +25,7 @@
     line-height: 45.2px;
     text-align: left;
     flex: 1;
+    margin-top: 0;
 
     &:first-of-type {
       margin-right: 150px;

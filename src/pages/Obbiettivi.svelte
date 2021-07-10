@@ -32,6 +32,10 @@
     display: flex;
     flex: 1;
 
+    &:first-of-type {
+      margin-top: 0;
+    }
+
     &:last-of-type {
       margin-bottom: 200px;
     }
@@ -40,6 +44,7 @@
       width: 50%;
       font-size: 40px;
       line-height: 40.2px;
+      margin-top: 0;
 
       &:first-of-type {
         margin-right: 50px;
