@@ -45,8 +45,6 @@
     background: var(--theme-background);
     border: 2px solid var(--theme-text);
     border-radius: 34px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
 
     @media only screen and (min-width: 720px) {
       background: var(--theme-text);
@@ -58,20 +56,18 @@
     position: absolute;
     content: '';
 
-    height: 13px;
-    width: 13px;
+    height: 14px;
+    width: 14px;
     left: -2px;
     right: 0px;
-    bottom: -1px;
+    bottom: -2px;
     background: var(--theme-background);
     border: 2px solid var(--theme-text);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
     border-radius: 50%;
 
     @media only screen and (min-width: 720px) {
-      height: 19px;
-      width: 19px;
+      height: 21px;
+      width: 21px;
 
       background: var(--theme-text);
       border: 2px solid var(--theme-background);

@@ -4,12 +4,6 @@
   export let esempio: Esempio;
   export let isOpen: boolean;
   export let onToggle: (id: number) => void;
-
-  // let open = false;
-
-  // function onToggle() {
-  //   open = !open;
-  // }
 </script>
 
 <div class="esempio">
@@ -18,7 +12,19 @@
   </div>
   <div class="content">
     <h3 on:click={() => onToggle(esempio.id)}>{esempio.titolo}</h3>
-    <p class:open={isOpen}>{esempio.testo}</p>
+    <div class="testo" class:open={isOpen}>
+      <p>
+        {esempio.testo}
+      </p>
+
+      <ul>
+        {#each esempio.links as link}
+          <li>
+            <a href={link.link} targe="_blank">{link.testo}</a>
+          </li>
+        {/each}
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -34,7 +40,6 @@
     line-height: 35.4px;
     margin-right: 10px;
     color: var(--theme-link);
-    transition: all 0.4s ease-in-out;
 
     &.open {
       transform: rotate(45deg);
@@ -65,13 +70,18 @@
       }
     }
 
-    p {
+    .testo {
       font-size: 25px;
       line-height: 31.6px;
       display: none;
 
       &.open {
         display: block;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
       }
 
       @media only screen and (min-width: 720px) {
