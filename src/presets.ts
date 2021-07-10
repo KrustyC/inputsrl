@@ -25,7 +25,7 @@ export const presets: Preset[] = [
     colors: {
       text: 'black',
       background: 'white',
-      link: 'red',
+      link: '#FF3535',
       border: 'black',
     },
     cursor: '/images/cursor-red.gif',

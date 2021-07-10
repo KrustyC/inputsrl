@@ -1,5 +1,8 @@
 <script lang="ts">
+  import { getContext } from 'svelte';
   import { talenti } from '../utils/talenti';
+
+  const { theme } = getContext('theme');
 </script>
 
 <div id="talenti">
@@ -8,7 +11,10 @@
     {#each talenti as talento}
       <div class="talento">
         <div class="picture">
-          <img src={talento.foto} alt="profile" />
+          <img
+            src={$theme.name === 'dark' ? talento.fotoDark : talento.fotoLight}
+            alt="profile"
+          />
         </div>
         <div class="content">
           <h3>{talento.nome}</h3>
@@ -58,12 +64,14 @@
 
   .picture,
   img {
-    width: 105px;
-    height: 105px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
 
     @media only screen and (min-width: 720px) {
       width: 180px;
       height: 180px;
+      margin-bottom: 0px;
     }
   }
 

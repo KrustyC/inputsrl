@@ -36,11 +36,11 @@
     min-height: 90vh;
 
     &.dark {
-      cursor: url('/images/red-circle.svg'), auto !important;
+      cursor: url('/images/yellow-dot.svg'), auto !important;
     }
 
     &.light {
-      cursor: url('/images/red-circle.svg'), auto !important;
+      cursor: url('/images/red-dot.svg'), auto !important;
     }
   }
 

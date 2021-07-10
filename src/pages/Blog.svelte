@@ -1,11 +1,17 @@
 <script lang="ts">
+  import { getContext } from 'svelte';
   import { posts } from '../utils/posts';
+
+  const { theme } = getContext('theme');
 </script>
 
 <div class="grid">
   {#each posts as post}
     <div class="post">
-      <img src={post.immagine} alt={post.titolo} />
+      <img
+        src={$theme.name === 'dark' ? post.immagineDark : post.immagineLight}
+        alt={post.titolo}
+      />
       <div class="content">
         {#if post.pubblicato}
           <a href={post.link}>{post.titolo}</a>
@@ -44,7 +50,7 @@
       margin-bottom: 10px;
 
       @media only screen and (min-width: 720px) {
-        width: 400px;
+        width: 351px;
       }
     }
 

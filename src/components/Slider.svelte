@@ -12,11 +12,11 @@
 <style lang="scss">
   .switch {
     &.switch-dark {
-      cursor: url('/images/red-circle.svg'), auto !important;
+      cursor: url('/images/yellow-dot.svg'), auto !important;
     }
 
     &.switch-light {
-      cursor: url('/images/red-circle.svg'), auto !important;
+      cursor: url('/images/red-dot.svg'), auto !important;
     }
 
     position: relative;
