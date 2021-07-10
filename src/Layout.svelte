@@ -9,8 +9,8 @@
   export let activePage: Page | null;
 
   function onGoHome() {
-    console.log('CIAO');
     activePage = Page.HOME;
+    window.scrollTo(0, 0);
   }
 </script>
 

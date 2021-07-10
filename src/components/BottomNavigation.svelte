@@ -8,6 +8,7 @@
 
   function enter(item: Page) {
     active = item;
+    window.scrollTo(0, 0);
   }
 </script>
 
