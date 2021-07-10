@@ -20,7 +20,7 @@
       <ul>
         {#each esempio.links as link}
           <li>
-            <a href={link.link} targe="_blank">{link.testo}</a>
+            <a href={link.link} target="_blank">{link.testo}</a>
           </li>
         {/each}
       </ul>
