@@ -46,7 +46,6 @@
 
     img {
       max-width: 100%;
-      height: 100px;
       margin-bottom: 10px;
 
       @media only screen and (min-width: 720px) {

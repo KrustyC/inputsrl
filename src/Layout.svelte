@@ -18,7 +18,7 @@
   <div id="top">
     <div id="content">
       <p id="title">
-        <b on:click={() => onGoHome()}>inputidea</b> . it
+        <b on:click={() => onGoHome()}>inputidea</b> <span class="dot">.</span> it
       </p>
       <Slider />
     </div>
@@ -26,7 +26,7 @@
 
   <div id="side">
     <p id="side-title">
-      <b on:click={() => onGoHome()}>inputidea</b> . it
+      <b on:click={() => onGoHome()}>inputidea</b> <span class="dot">.</span> it
     </p>
   </div>
 
@@ -58,62 +58,66 @@
         text-decoration: underline;
       }
     }
-  }
 
-  main {
-    text-align: left;
-    padding-top: 50px;
-    width: 80vw;
-    max-width: 80vw;
-    margin: 0 auto;
-    color: var(--theme-text);
-  }
-
-  #top {
-    font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
-    background: var(--theme-background);
-    height: 80px;
-    top: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: flex-end;
-    z-index: 1000;
-
-    #content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 80vw;
-      margin: 0 auto;
-    }
-  }
-
-  #side {
-    display: none;
-  }
-
-  @media (min-width: 720px) {
     main {
+      text-align: left;
+      padding-top: 50px;
+      width: 80vw;
       max-width: 80vw;
-      padding-top: 0;
+      margin: 0 auto;
+      color: var(--theme-text);
+    }
+
+    .dot {
+      color: var(--theme-link);
     }
 
     #top {
-      display: none;
+      font-family: Arial, Helvetica, sans-serif;
+      position: fixed;
+      background: var(--theme-background);
+      height: 80px;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      align-items: flex-end;
+      z-index: 1000;
+
+      #content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80vw;
+        margin: 0 auto;
+      }
     }
 
     #side {
-      position: fixed;
-      font-size: 25px;
-      display: block;
-      font-family: Arial, Helvetica, sans-serif;
-      right: 50px;
-      top: 100px;
+      display: none;
+    }
 
-      #side-title {
-        transform: rotate(-90deg);
+    @media (min-width: 720px) {
+      main {
+        max-width: 80vw;
+        padding-top: 0;
+      }
+
+      #top {
+        display: none;
+      }
+
+      #side {
+        position: fixed;
+        font-size: 25px;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        right: 50px;
+        top: 100px;
+
+        #side-title {
+          transform: rotate(-90deg);
+        }
       }
     }
   }
